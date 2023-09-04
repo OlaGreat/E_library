@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+ <h1>welcome to our library</h1>
+ <p>Welcome my friend</p>
+    {% for author in authors %}
+        <li>{{ author.first_name }} {{ author.last_name }}</li>
+    {% endfor %}
+
+</body>
+</html>
